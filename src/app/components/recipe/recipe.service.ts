@@ -33,6 +33,10 @@ export class RecipeService {
     // Use slice to return a copy of the array, without it any changes in ths array would affect the service array.
   }
 
+  getRecipe(index:number) {
+    return this.recipes.slice()[index];
+  }
+
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.slService.addIngredients(ingredients);
   } 
