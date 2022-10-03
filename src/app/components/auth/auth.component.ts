@@ -49,5 +49,10 @@ error: string = null;
       this.isLoading = false;        
     }
     );
+    form.reset();
+  }
+
+  onHandleError(){
+    this.error = null; // This will reset error message
   }
 }
