@@ -1,11 +1,11 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Router } from "@angular/router";
 import { catchError, tap } from "rxjs/operators";
 import { throwError,BehaviorSubject } from "rxjs";
 
 
 import { User } from "./user.model";
-import { Router } from "@angular/router";
 
 export interface AuthResponseData {
   kind:string;
